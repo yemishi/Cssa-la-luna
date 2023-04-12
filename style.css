@@ -1,0 +1,1092 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --black: #000000;
+    --yellow: #EBE54D;
+    --blue: #43519D;
+    --gray: #666666;
+    --white: #FFFFFF;
+    --background: #F5F5F5;
+    --dark: #333333;
+    --title--font: 'Montserrat', sans-serif;
+    --text--font: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #F5F5F5;
+    font-family: var(--text--font);
+}
+
+section {
+    padding: 0 10px 0 10px;
+    margin-top: 30px;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__header {
+    width: 103px;
+    padding: 10px;
+}
+
+.header__menu {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.title {
+    font-family: var(--title--font);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    color: var(--dark);
+}
+
+#menu__mob {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    display: none;
+    width: 244px;
+    height: 314px;
+    background-color: var(--white);
+    list-style: none;
+    text-align: right;
+    padding-right: 40px;
+}
+
+#menu__mob li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#menu__mob li a {
+    color: var(--black);
+}
+
+.menu__desk,
+.desk,
+.tablet {
+    display: none;
+}
+
+.close__menu {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+}
+
+
+.login {
+    background-color: transparent;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: var(--title--font);
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login:hover,
+a:hover,
+.login__desk:hover {
+    filter: brightness(80%);
+}
+
+.login:active,
+a:active,
+.login__desk:active {
+    filter: brightness(70%);
+}
+
+.login:default,
+a:default,
+.login__desk:default {
+    filter: contrast(0%);
+}
+
+#ofertas {
+    display: flex;
+    flex-direction: column;
+}
+
+.oferta {
+    width: 100%;
+    align-self: center;
+    margin-top: 5px;
+    height: 150px;
+}
+
+.oferta__text {
+    display: flex;
+    position: absolute;
+    font-family: var(--title--font);
+    color: var(--white);
+    margin-left: 10px;
+    width: 82%;
+    height: 82px;
+    margin: 40px 0 0 10px;
+    justify-content: space-between;
+}
+
+.oferta__text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    width: 200px;
+    margin: 0;
+    line-height: 100%;
+}
+
+.oferta__text p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.yellow-arrow {
+    width: 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--yellow);
+    align-self: flex-end;
+}
+
+.oferta-1 {
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/banner/royal-mansour.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oferta-2 {
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/banner/aymane.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oferta-3 {
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/banner/tentes-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sobre__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 169.5%;
+    font-family: var(--text--font);
+}
+
+.vantagem {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 20px 10px 20px 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.vantagem p {
+    font-weight: 400;
+    color: var(--gray);
+    margin: 0;
+    font-size: 14px;
+    line-height: 169.5%;
+    width: 75%;
+}
+
+.bebida :nth-child(1),
+.cafe :nth-child(1) {
+    align-self: baseline;
+}
+
+.bebida p {
+    width: 76%;
+}
+
+.quarto {
+    margin-top: 5px;
+    border-radius: 8px;
+    font-family: var(--title--font);
+}
+
+.quartos h1 {
+    color: var(--black);
+}
+
+.quarto__foto {
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.quarto__container {
+    padding: 0 10px 20px 10px;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0px 0px 8px 8px;
+}
+
+span button {
+    border-radius: 4px;
+    font-family: var(--title--font);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--blue);
+    border: 1px solid #43519D;
+    background-color: transparent;
+    padding: 12px 32px;
+    height: 44px;
+    cursor: pointer;
+}
+
+span button:hover {
+    color: #394485;
+    border: 1px solid #394485;
+}
+
+span button:active {
+    color: #29315E;
+    border: 1px solid #29315E;
+}
+
+span button:default {
+    color: var(--gray);
+    border: 1px solid #666666;
+}
+
+.quarto__container strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quarto__container span {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--gray);
+    margin-left: 8px;
+}
+
+.quarto__container p {
+    margin: 20px 0 20px 0;
+}
+
+.quarto__container img {
+    margin: 26px 0 0 0;
+    justify-self: flex-end;
+
+}
+
+.quarto__desc p {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 400;
+    margin: 0;
+    line-height: 169.5%;
+}
+
+.quarto__desc h3 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--text--font);
+    margin: 0;
+    line-height: 169.5%;
+}
+
+.quarto__mais {
+    margin-top: 5px;
+    height: 100px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/quartos/quarto-mais-mob.png);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quarto__mais img {
+    border-radius: 8px;
+}
+
+.quarto__mais p {
+    font-family: var(--title--font);
+    font-weight: 600;
+    color: var(--yellow);
+    width: 117.31px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.quarto-4,
+.quarto-5 {
+    display: none;
+}
+
+table {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 169, 5%;
+    width: 100%;
+    border-spacing: 5px;
+}
+
+th {
+    background: #29315E;
+    font-weight: 700;
+    color: var(--white);
+}
+
+th,
+td {
+    padding-left: 10px;
+    width: 25%;
+    height: 67px;
+    border-radius: 8px;
+    text-align: start;
+}
+
+td strong:nth-child(2) {
+    display: none;
+}
+
+td:nth-child(4) {
+    font-family: var(--title--font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--white);
+}
+
+tr:nth-child(even) {
+    background-color: var(--yellow);
+}
+
+.pacote__content {
+    background-color: var(--yellow);
+    border-radius: 8px;
+    padding: 10px 10px 23px 10px;
+}
+
+.pacote {
+    padding: 0;
+}
+
+form {
+    margin-top: 10px;
+    background-color: var(--white);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 30px 30px;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    width: 115.33px;
+}
+
+select,
+input {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--text--font);
+    border: none;
+    outline: none;
+}
+
+select {
+    background-image: url(assets/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    appearance: none;
+    cursor: pointer;
+}
+
+form label {
+    font-family: var(--title--font);
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+form button {
+    width: 122px;
+}
+
+input[type=number] {
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.contatos p {
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 169.5%;
+}
+
+.contatos a {
+    margin-top: 20px;
+    color: var(--black);
+    font-family: var(--title--font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 8px;
+}
+
+.contatos button {
+    margin-top: 30px;
+}
+
+.contatos__banner {
+    display: none;
+}
+
+.local span :nth-child(2) {
+    color: #29315E;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 28px;
+    background-color: var(--dark);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.footer__logo {
+    display: none;
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+
+.footer__content ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.listas li {
+    margin-bottom: 10px;
+}
+
+li a,
+.footer__content p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--text--font);
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.footer__content p {
+    margin: 0;
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        height: 125px;
+    }
+
+    section {
+        margin-top: 60px;
+        padding: 0 20px 0 20px;
+
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .mob {
+        display: none;
+    }
+
+    .header__menu img {
+        width: 45px;
+
+    }
+
+    .header__menu {
+        padding: 20px;
+    }
+
+    .logo__header {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .oferta {
+        Height: 230px;
+        margin-top: 10px;
+    }
+
+    .oferta__text h2 {
+        font-size: 40px;
+        width: 320px;
+    }
+
+    .oferta__text {
+        flex-direction: column;
+        height: 158px;
+        margin: 40px 0 0 40px;
+
+    }
+
+    .oferta__text p {
+        margin: 10px 0 20px 0;
+        font-size: 20px;
+    }
+
+    .sobre__text {
+        font-size: 16px;
+    }
+
+    .oferta-3 {
+        background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/banner/tentes-tablet.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .yellow-arrow {
+        align-self: auto;
+    }
+
+    .vantagens {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+            "title title"
+            "banheira televisao"
+            "cafe cafe"
+            "bebida campainha"
+            "bebida toalha"
+            "pare pare"
+            "cartoes chave"
+        ;
+    }
+
+    .vantagem p {
+        font-size: 16px;
+        width: 83%;
+        margin: 0 10px 0 5px;
+    }
+
+    .vantagem {
+        margin: 0;
+        padding: 25px 30px 25px 30px;
+        align-items: center;
+
+    }
+
+    .vantagem img {
+        width: 55px;
+        max-height: 55px;
+        margin: 0 0 10px 10px;
+    }
+
+    .banheira {
+        grid-area: banheira;
+    }
+
+    .televisao {
+        grid-area: televisao;
+    }
+
+    .cafe {
+        grid-area: cafe;
+    }
+
+    .bebida {
+        grid-area: bebida;
+    }
+
+    .campainha {
+        grid-area: campainha;
+    }
+
+    .toalha {
+        grid-area: toalha;
+    }
+
+    .pare {
+        grid-area: pare;
+    }
+
+    .cartoes {
+        grid-area: cartoes;
+    }
+
+    .chave {
+        grid-area: chave;
+    }
+
+    .quartos {
+        margin-top: 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 310px 310px 310px;
+        gap: 20px;
+    }
+
+    .quarto__foto {
+        height: 180px;
+    }
+
+    .quarto__foto:nth-child(2) {
+        height: 310px;
+        object-fit: 100%;
+    }
+
+    .quarto-4,
+    .quarto-5 {
+        display: inherit;
+    }
+
+    .quarto__container span:nth-child(4) {
+        justify-self: end;
+    }
+
+    .quarto__container {
+        padding: 0 20px 20px 20px;
+    }
+
+    .quarto__mais {
+        height: 310px;
+        background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/quartos/quarto-mais.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .quarto__mais p {
+        margin: 0 0 33px 40px;
+    }
+
+    td,
+    th {
+        font-size: 16px;
+        height: 67px;
+        padding-left: 20px;
+    }
+
+    tr {
+        width: 100%;
+    }
+
+    table {
+        border-spacing: 10px;
+    }
+
+    td strong:nth-child(1) {
+        display: none;
+    }
+
+    td strong:nth-child(2) {
+        display: block;
+    }
+
+    form {
+        display: flex;
+        height: 97px;
+        margin-top: 27px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .pacote__content {
+        height: 220px;
+        padding: 35px 20px 0 20px
+    }
+
+    form :nth-child(3),
+    form :nth-child(4) {
+        display: none;
+    }
+
+    .contatos__banner {
+        display: block;
+        object-fit: cover;
+        margin-left: 5px;
+        border-radius: 8px;
+        height: 323px;
+    }
+
+    .contatos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 60px;
+    }
+
+    .contatos p {
+        font-size: 16px;
+    }
+
+    .contatos__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatos button {
+        margin-top: 55px;
+    }
+
+    .footer__logo {
+        display: block;
+        align-self: center;
+        position: absolute;
+        margin-top: 164px;
+        width: 390px;
+    }
+
+    .footer__content {
+        padding: 20px 20px 0 20px;
+        height: 220px;
+    }
+
+    .footer__content ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .menu__desk,
+    .desk {
+        display: grid;
+    }
+
+    .header__menu,
+    .tablet {
+        display: none;
+    }
+
+    .login__desk {
+        cursor: pointer;
+        background-color: transparent;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        font-family: var(--title--font);
+        color: var(--blue);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background);
+        padding: 0 360px 0 360px;
+        align-items: center;
+        width: auto;
+        height: 182.11px;
+        margin-top: 40px;
+    }
+
+    section,
+    .pacote,
+    footer {
+        padding: 0 360px 0 360px;
+        margin-top: 120px;
+    }
+
+    .header__top {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 40px 0;
+    }
+
+    .tel {
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--text--font);
+        margin-left: 20px;
+    }
+
+    .header__top span {
+        display: flex;
+        align-self: center;
+    }
+
+    .logo__header {
+        width: 250px;
+        padding: 0;
+    }
+
+    .oferta__text {
+        width: 320px;
+    }
+
+    .menu__desk {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--white);
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .menu__desk ul {
+        padding: 0;
+        margin-left: 40px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .menu__desk li a {
+        color: var(--dark);
+
+    }
+
+    .menu__desk span {
+        margin: 20px 40px 20px 0;
+    }
+
+    .ofertas__content {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        grid-template-areas:
+            "oferta-1 oferta-3"
+            "oferta-2 oferta-3"
+        ;
+    }
+
+    .oferta-1 {
+        grid-area: oferta-1;
+        height: 260px;
+        margin: 0;
+    }
+
+    .oferta-2 {
+        grid-area: oferta-2;
+        height: 260px;
+        margin: 0;
+    }
+
+    .oferta-3 {
+        grid-area: oferta-3;
+        height: 540px;
+        margin: 0;
+        background: linear-gradient(90deg, rgba(41, 49, 94, 0.8) 0%, rgba(41, 49, 94, 0.1) 80.73%), url(assets/banner/tentes-desk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .oferta__text {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tentes__text {
+        height: 460px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .sobre__text {
+        width: 750px;
+    }
+
+    .vantagens {
+        grid-template-areas:
+            "title title title title"
+            "banheira televisao cafe cafe"
+            "bebida campainha toalha cartoes"
+            "bebida pare pare chave";
+        gap: 20px;
+    }
+
+    .vantagem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .vantagem p {
+        width: 100%;
+    }
+
+    .vantagem:nth-child(5) p {
+        width: 98%;
+    }
+
+    .vantagem:nth-child(2) img,
+    .vantagem:nth-child(9) img,
+    .vantagem:nth-child(6) img {
+        width: 74px;
+    }
+
+    .quartos {
+        gap: 20px;
+        grid-template-areas:
+            "quarto-1 quarto-2 quarto-3"
+            "quarto-4 quarto-5 quarto-6"
+            "quarto-7 quarto-8 quarto__mais";
+    }
+
+    table {
+        border-spacing: 20px;
+    }
+
+    form :nth-child(3),
+    form :nth-child(4) {
+        display: flex;
+    }
+
+    .quantos {
+        grid-area: quantos;
+    }
+
+    .origem {
+        grid-area: origem;
+    }
+
+    .destino {
+        grid-area: destino;
+    }
+
+    .datas {
+        grid-area: datas;
+    }
+
+    .noites {
+        grid-area: noites;
+    }
+
+    form {
+        display: grid;
+        grid-template-areas:
+            "origem destino datas noites quantos span"
+        ;
+        grid-template-columns: auto;
+        padding: 0 20px;
+
+    }
+
+    .contatos__banner {
+        height: 314px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contatos__text {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .local {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contatos__text ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px 23px 0 0;
+        height: 149px;
+    }
+
+    .contatos__text ul li {
+        font-size: 16px;
+        font-family: var(--text--font);
+        color: var(--gray);
+        font-weight: 400;
+    }
+
+    .contatos a {
+        margin-top: 20px;
+    }
+
+    .contatos p {
+        margin: 0;
+        width: 80%;
+    }
+
+    .contatos span {
+        margin-top: 10px;
+    }
+}
